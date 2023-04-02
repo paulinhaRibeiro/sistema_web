@@ -50,7 +50,7 @@ header .navbar ul li:hover {
     cursor: pointer;
 }
 
-header .navbar ul .inscrever-se li:hover {
+/* header .navbar ul .inscrever-se li:hover {
     color:var(--color);
     cursor: pointer;
 }
@@ -66,9 +66,9 @@ header .navbar ul .inscrever-se li:hover {
     border-radius: 3px;
 }
 
+ */
 
-
-
+/* 
 .entrar {
     background: #14213d71;
     color: #fff;
@@ -78,7 +78,7 @@ header .navbar ul .inscrever-se li:hover {
     border-style: solid;
     border-color: #14213d4e;
     border-radius: 3px;
-}
+} */
 
 
 header .logo{
@@ -261,6 +261,7 @@ label span:nth-child(2){
     }
 
     header .navbar ul li {
+        background: #14213D;
         margin: 10px 0;
         font-size: 40px;
         color: #fff;
