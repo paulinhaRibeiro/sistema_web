@@ -46,7 +46,7 @@ header .navbar ul li{
 }
 
 header .navbar ul li:hover {
-    color:var(--color);
+    color:#fca311;
     cursor: pointer;
 }
 
@@ -86,7 +86,8 @@ header .logo{
     align-items: center;
 }
 
-header .logo > img{
+/* > img */
+header .logo > a > img{
     height: 50px;
     margin: 0 10px;
 }
@@ -173,20 +174,34 @@ label span:nth-child(2){
 }
 
 .container .content .info button {
-    height: 45px;
+
+    width: 150px;
+    background-color: #000;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    /* height: 45px;
     width: 150px;
     background: #14213D;
     outline: none;
     border: none;
     margin-top: 20px;
     border-color: #14213d4e;
-    border-radius: 3px;
+    border-radius: 3px; */
 }
 
 .container .content .info button:hover {
-    opacity: .7;
+    background-color: #14213d;
+    /* opacity: .7;
     transition: .2s;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .container .content .info button a {
@@ -201,6 +216,7 @@ label span:nth-child(2){
 }
 
 .icons{
+    color: #333;
     position: fixed;
     display: flex;
     flex-flow: column wrap;
@@ -333,7 +349,8 @@ label span:nth-child(2){
         font-size: 15px;
     }
 
-    header .logo > img{
+    /* .logo > img */
+    header .logo > a > img{
         height: 35px;
 
     }
