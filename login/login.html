@@ -20,7 +20,7 @@
             </a>
 
             <!-- codigo que da erro -->
-          <!-- <form action="#" class="sign-in-form"> -->
+          <form action="#" class="sign-in-form">
             
             <h2 class="title">Login</h2>
 
@@ -31,7 +31,7 @@
                   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
                 </svg>
               </i>
-              <input type="text" placeholder="Nome de Usuário" id="loginr"/>
+              <input type="text" placeholder="Nome de Usuário" id="login"/>
             </div>
 
             <div class="input-field">
@@ -41,13 +41,14 @@
                   <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
                 </svg>
               </i>
-              <input type="password" placeholder="Senha" id="senhar"/>
+              <input type="password" placeholder="Senha" id="senha"/>
             </div>
 
             <a class="password" href="#">Esqueceu sua senha?</a>
-            <input type="submit" value="Entrar" class="btn solid" onclick="logar()"/>
+
+            <input type="submit" value="Entrar" class="btn solid" onclick="logar(); return false"/>
             <p class="social-text">Ou entre com plataformas sociais</p>
-            <a href="adm.html">op</a>
+            
             <div class="social-media">
               <!-- google -->
               <a href="#" class="social-icon">
@@ -171,30 +172,39 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
     <script>
+
 
       function logar(){
 
-        var login = document.getElementById("loginr").value;
-        var senha = document.getElementById("senhar").value;
+          var login = document.getElementById('login').value;
+          var senha = document.getElementById('senha').value;
 
-        if(login == "admin" && senha == "123"){
-          alert("adm");
-          location.href="usuarios/adm.html";
-          window.location.href = "usuarios/adm.html";
-        }
-        else if(login == "criente" && senha == "123"){
-          alert("criente");
-          window.location.href="usuarios/criente.html";
-        }else if(login == "func" && senha == "123"){
-          alert("funcionário");
-          window.location.href="usuarios/funcionario.html";
-        }else{
-          alert("senha ou usuario incorreto");
-        }
-}
+          if(login == "admin" && senha == "123"){
+              location.href = "usuarios/adm.html";
+              
+          }
 
-    </script>
+          else if(login == "cliente" && senha == "123"){
+              location.href = "usuarios/cliente.html";
+              
+          }
+
+          else if(login == "func" && senha == "123"){
+              location.href = "usuarios/funcionario.html";
+              
+          }
+
+          else{
+              alert('Usuario ou senha incorretos');
+          }
+          
+      }
+
+  </script>
+
+
+    <script src="app.js"></script>
+    
   </body>
 </html>
