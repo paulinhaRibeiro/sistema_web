@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fornecedores</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../index.html" class="nav-link">Home</a>
+      </li>
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Pesquisar" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-danger navbar-badge">1</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">1 Notificação</span>
+          
+          <div class="dropdown-divider"></div>
+          <a href="estoque.html" class="dropdown-item">
+            <i class="fas fa-fw fa-chart-area"></i> 1 novo estoque baixo
+            <span class="float-right text-muted text-sm">12 horas</span>
+          </a>
+
+          
+          
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Administrador</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Kely Soares</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Pesquisar" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+               <br>
+          <li class="nav-header">CADASTRO</li>
+
+
+
+          <!-- produtos -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-users fas fa-chart-pie"></i>
+              <p>
+                Equipe
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="mecanicos.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mecânico</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="recepcionistas.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Recepicionista</p>
+                </a>
+              </li>
+
+
+              <li class="nav-item">
+                <a href="fornecedores.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fornecedor</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+    
+          
+          <!-- Divider -->
+          <br>
+          <li class="nav-header">CONSULTAS</li>
+
+          <li class="nav-item">
+            <a href="estoque.html" class="nav-link">
+              <i class="fas fa-fw fa-chart-area"></i>
+              <p>
+                Estoque Baixo
+                <span class="right badge badge-danger">1</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="compras.html" class="nav-link">
+              <i class="fas fa-shopping-cart"></i>
+              <p>
+                Compras
+                <!-- <span class="right badge badge-danger">Novo</span> -->
+              </p>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="vendas.html" class="nav-link">
+              <i class="fa fa-dollar-sign"></i>
+              <p>
+                Vendas
+                <!-- <span class="right badge badge-danger">Novo</span> -->
+              </p>
+            </a>
+          </li>
+          
+
+          <!-- Divider -->
+          <br>
+          <li class="nav-header">RELATORIOS</li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="far fa-chart-bar"></i>
+              <p>
+                Relatórios
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+
+            
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="fluxo_caixa.html" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>Fluxo Caixa</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="graf_relatorio.html" class="nav-link">
+                  <i class="nav-icon fas fa-chart-pie"></i>
+                  <p>Relatório Mensal</p>
+                </a>
+              </li>
+              
+              
+            </ul>
+          </li>
+
+
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+
+      
+
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Cadastro Fornecedor</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="./#">Home</a></li>
+              <li class="breadcrumb-item active">Cadastro Fornecedor</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row mt-4 mb-4">
+        <a type="button" class="btn-secondary btn-sm ml-3 d-none d-md-block" onclick="novo(); return false" >Novo Fornecedor</a>
+        
+        <a type="button" class="btn-primary btn-sm ml-3 d-block d-sm-none" onclick="novo(); return false">+</a>
+        
+    </div>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+
+      <div class="card-body">
+          <div class="table-responsive">
+              <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="dataTable_length">
+                    <label>
+                      Quantidade de registros
+                      <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm" style="font-size: 15px;"><option value="10" >10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div>
+                      <div class="col-sm-12 col-md-6"><div id="dataTable_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable no-footer" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                  <br>
+                <thead>
+                  
+                  <tr>
+                      <th>Nome</th>
+                      <th>CNPJ</th>
+                      <th>Telefone</th>
+                      <th>E-mail</th>
+                      <th>Endereço</th>
+
+                      <th>Ações</th>
+                  </tr>
+              </thead>
+
+              <tbody>
+                  <!-- registros -->
+                  <tr>
+                      
+                      <td>Paula Vitória</td>
+                      <td>Paula Vitória</td>
+                      <td>Paula Vitória</td>
+                      <td>paula@gmail.com</td>
+                      <td>Paula Vitória</td>
+                     
+
+                      <td>
+                           <a onclick="editar(); return false" class='text-primary mr-1' title='Editar Dados'><i class='far fa-edit'></i></a>
+                          <a onclick="excluir(); return false" class='text-danger mr-1' title='Excluir Registro'><i class='far fa-trash-alt'></i></a>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      
+                      <td>Vitoria</td>
+                      <td>098.987.432-22</td>
+                      <td>(86) 995546738</td>
+                      <td>paula@gmail.com</td>
+                      <td>Ali</td>
+                     
+
+                      <td>
+                          <!-- mostrar quando passa o mouse -->
+                           <a class='text-primary mr-1' title='Editar Dados'><i class='far fa-edit'></i></a>
+                          <a class='text-danger mr-1' title='Excluir Registro'><i class='far fa-trash-alt'></i></a>
+                      </td>
+                  </tr>
+
+
+
+
+
+
+
+              </tbody>
+              </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Mostrar 1 de 2 de 2 Registros</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Próximo</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">Anterior</a></li></ul></div></div></div></div>
+          </div>
+      </div>
+  </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalDados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+  
+                <h5 class="modal-title" id="title" > . </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="form" method="POST">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label >Nome</label>
+                        <input type="text" class="form-control" id="nome-mec" name="nome-mec" placeholder="Nome">
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >CNPJ</label>
+                                <input type="text" class="form-control" id="CNPJ" name="cpf-mec" placeholder="CNPJ">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Telefone</label>
+                                <input type="text" class="form-control" id="telefone" name="telefone-mec" placeholder="Telefone">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label >Email</label>
+                        <input type="text" class="form-control" id="email" name="email-mec" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label >Endereço</label>
+                        <input type="text" class="form-control" id="endereco" name="endereco-mec" placeholder="Endereco">
+                    </div>
+                    
+                    <small>
+                        <div id="mensagem">
+
+                        </div>
+                    </small> 
+
+                </div>
+
+
+
+                <div class="modal-footer">
+
+
+
+                <input type="hidden" name="txtid2" id="txtid2">
+                <input type="hidden" name="antigo" id="antigo">
+                <!-- botoes de inserir novos mecanicos -->
+                <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary" onclick="retornar(); return false" >Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal" id="modal-deletar" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Excluir Registro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <p>Deseja realmente Excluir este Registro?</p>
+
+                <div align="center" id="mensagem_excluir" class="">
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-cancelar-excluir">Cancelar</button>
+                <form method="post">
+
+                    <input type="hidden" id="id"  name="id" required>
+
+                    <button type="button" id="btn-deletar" name="btn-deletar" class="btn btn-danger">Excluir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+  var title = document.querySelector("#title");
+
+  function novo(){
+    $('#modalDados').modal('show');
+    title.innerHTML = "Inserir Registro";
+  
+  }
+
+  function editar(){
+    $('#modalDados').modal('show');
+    // mudar titulo para editar
+    title.innerHTML = "Editar Registro";
+  }
+
+  
+
+  function excluir(){
+    $('#modal-deletar').modal('show');
+  }
+
+
+  function retornar(){
+    location.href = "fornecedores.html";
+  }
+
+</script>
+
+
+
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2022 <a href="https:google.com">OpCanica</a>.</strong>
+    Todos os direitos reservados
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Versão</b> 3.2.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="../plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="../plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../dist/js/pages/dashboard.js"></script>
+</body>
+</html>
