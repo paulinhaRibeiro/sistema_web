@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acompanhamento de Serviços</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jaGKFDpZL+w1ZVxEpXT+CJ1OSr7RDXdyPVyCn7KuLsBHiCE7B3gMBC3Vq8CxMQ34S+OQOJd++q3FqfPM4Wx4Lg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../mecan.html" class="nav-link">Home</a>
+      </li>
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Pesquisar" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-danger navbar-badge">1</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">1 Notificação</span>
+          
+          <div class="dropdown-divider"></div>
+          <a href="orca_pendente.html" class="dropdown-item">
+            <i class="fas fa-fw fa-exclamation-triangle"></i> 2 novo Orçamentos pendentes
+            <span class="float-right text-muted text-sm">12 horas</span>
+          </a>
+
+          
+          
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+         
+        <a class="nav-link" href="../../index.html">
+          Sair
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../mecan.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Mecânico</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Paula</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Pesquisar" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+          <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <br>
+
+        <li class="nav-header">ORÇAMENTOS</li>
+
+        <li class="nav-item">
+          <a href="orca_pendente.html" class="nav-link">
+            <i class="fas fa-fw fa-exclamation-triangle"></i>
+            <p>
+              Orçamentos Pendentes 
+              <span class="right badge badge-danger">2</span>
+            </p>
+          </a>
+        </li>
+
+
+        <br>
+
+        <li class="nav-header">ACOMPANHAMENTO</li>
+
+        <li class="nav-item">
+          <a href="acomp_ser.html" class="nav-link">
+            <i class="fas fa-fw fa-edit"></i>
+            <p>
+              Acompanhamento de Serviço 
+              <span class="right badge badge-warning">3</span>
+            </p>
+          </a>
+        </li>
+
+
+        <br>
+
+        <li class="nav-header">SERVIÇOS</li>
+
+        <li class="nav-item">
+          <a href="serv_finalizados.html" class="nav-link">
+            <i class="fas fa-fw fa-calendar-check"></i>
+            <p>
+              Serviços Concluídos 
+              <!-- <span class="right badge badge-danger">1</span> -->
+            </p>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+
+
+
+
+      
+      
+
+
+          
+
+          
+      
+
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Acompanhamento de Serviços</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="../mecan.html">Home</a></li>
+              <li class="breadcrumb-item active"> Acompanhamento de Serviços</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+
+    
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+
+      <div class="card-body">
+          <div class="table-responsive">
+              <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="dataTables_length" id="dataTable_length">
+                    <center>
+                    <label>
+                      Quantidade de registros
+                      <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm" style="font-size: 15px;"><option value="10" >10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div>
+                
+                      <div class="col-sm-12 col-md-6"><div id="dataTable_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable no-footer" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;"> 
+                        
+                            
+                            </center>
+                     
+                  <br>
+                <thead>
+                  
+                  <tr>
+                      <th>Cliente</th>
+                      <th>Email</th>
+                      <th>Veículo</th>
+                      <th>Serviço</th>
+                      <th>Data prevista</th>
+                      <th>Peças</th>
+                      <th>Valor das peças</th>
+
+                      <th> Mão de Obra</th>
+                      <th>Orçamento total</th>
+                      <th>Concluir</th>
+                  </tr>
+              </thead>
+
+              <tbody>
+
+
+                  <tr>
+                      
+                    <td>Ana</td>
+                    <td>ana1p2@gmail.com</td>
+                    <td>Gol quadrado</td>
+                    
+                    <td>Troca de faról</td>
+                    <td>17-07-23</td>
+                    <td>Faról</td>
+                    <td>250,00</td>
+                    
+                    <td>100,00</td>
+
+                    <td>350,00</td>
+                    
+                     
+
+                      <td>
+                          <!-- mostrar quando passa o mouse -->
+
+                           <a class='text-danger mr-1' title='Comprar' onclick="excluir(); return false">
+                            
+                            <i class="fas fa-check"></i>
+
+                            </i>
+                          </a>
+                          
+                      </td>
+                  </tr>
+
+
+
+
+
+                  <tr>
+                      
+                    <td>Vitória</td>
+                    <td>vitoriap2@gmail.com</td>
+                    <td>Troca de Óleo</td>
+                    <td>Saveiro Cross</td>
+                    <td>18-06-23</td>
+                    <td>Óleo</td>
+                    <td>50,00</td>
+                    
+                    <td>50,00</td>
+
+                    <td>100,00</td>
+                    
+                     
+
+                      <td>
+                          <!-- mostrar quando passa o mouse -->
+
+                           <a class='text-danger mr-1' title='Comprar' onclick="excluir(); return false">
+                            
+                            <i class="fas fa-check"></i>
+
+                            </i>
+                          </a>
+                          
+                      </td>
+                  </tr>
+
+
+                                    <tr>
+                      
+                    <td>Raimundo</td>
+                    <td>raimundo@gmail.com</td>
+                    <td>Troca de Óleo</td>
+                    <td>S10</td>
+                    <td>18-06-23</td>
+                    <td>Óleo</td>
+                    <td>50,00</td>
+                    
+                    <td>50,00</td>
+
+                    <td>100,00</td>
+                    
+                     
+
+                      <td>
+                          <!-- mostrar quando passa o mouse -->
+
+                           <a class='text-danger mr-1' title='Comprar' onclick="excluir(); return false">
+                            
+                            <i class="fas fa-check"></i>
+
+                            </i>
+                          </a>
+                          
+                      </td>
+                                    </tr>
+
+
+
+
+
+
+
+              </tbody>
+              </table></div></div>
+                <label>
+  <a onclick="editar2(); return false" title='Cadastrar serviços'>
+    <span class="info-box-icon bg-info elevation-1">
+      <button type="button" id="btn-deletar" class="btn btn-danger">
+        <i class="fas fa-user-plus"></i> Cadastro de serviços
+      </button>
+    </span>
+  </a>
+</label>
+               <div class="row">
+  <div class="col-sm-12 col-md-5">
+    <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Mostrar 1 de 2 de 2 Registros</div>
+  </div>
+  <div class="col-sm-12 col-md-7">
+    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+      <ul class="pagination">
+        <li class="paginate_button page-item previous disabled" id="dataTable_previous">
+          <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Próximo</a>
+        </li>
+        <li class="paginate_button page-item active">
+          <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+        </li>
+        <li class="paginate_button page-item next disabled" id="dataTable_next">
+          <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">Anterior</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalDados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+  
+                <h5 class="modal-title" id="title" > . </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="form" method="POST">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label >Peças necessárias</label>
+                    <br />
+
+                      <select class="form-select form-select-lg mb-3 form-control" multiple aria-label="multiple select example">
+  <!-- <option selected>Abra o menu de seleção</option> -->
+  <option value="1">Freio Disco</option>
+  <option value="2">Faról</option>
+  <option value="3">Caixa de embreagem</option>
+                      </select>
+
+
+                        
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label >Valor mão de obra</label>
+                        <input type="text" class="form-control" id="email" name="email-mec" placeholder="Valor">
+                    </div>
+
+
+                    
+
+
+
+
+
+                    
+                    
+                    <small>
+                        <div id="mensagem">
+
+                        </div>
+                    </small> 
+
+                </div>
+
+
+
+                <div class="modal-footer">
+
+
+
+                <input type="hidden" name="txtid2" id="txtid2">
+                <input type="hidden" name="antigo" id="antigo">
+                
+                <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary" onclick="retornar(); return false" >Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal" id="modal-deletar" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Concluir Serviço</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <p>Está atividade foi realmente concluída?</p>
+
+                <div align="center" id="mensagem_excluir" class="">
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-cancelar-excluir">Cancelar</button>
+                <form method="post">
+
+                    <input type="hidden" id="id"  name="id" required>
+
+                    <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary" onclick="retornar3(); return false" >
+                      <a onclick="editar3(); return false"title='Comprar'>Concluir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+  var title = document.querySelector("#title");
+
+  function novo(){
+    $('#modalDados').modal('show');
+    title.innerHTML = "Inserir Registro";
+  
+  }
+
+  function editar(){
+    $('#modalDados').modal('show');
+    // mudar titulo para editar
+    title.innerHTML = "Realizar Orçamento";
+  }
+
+  
+
+  function excluir(){
+    $('#modal-deletar').modal('show');
+  }
+
+
+  function retornar(){
+    location.href = "orca_pendente.html";
+  }
+
+function editar2(){
+        $('#modalDados2').modal('show');
+        // mudar titulo para editar
+        title.innerHTML = "Cadastrar Serviços";
+      }
+      function retornar2(){
+    location.href = "acomp_ser.html";
+  }
+
+  function editar3(){
+        $('#modalDados2').modal('show');
+        // mudar titulo para editar
+        title.innerHTML = "Cadastrar Serviços";
+      }
+      function retornar3(){
+    location.href = "serv_finalizados.html";
+  }
+
+
+
+  
+
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="modalDados2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+
+              <h5 class="modal-title" id="title" > . </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <form id="form" method="POST">
+              <div class="modal-body">
+
+                <div class="row">
+                      
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                      <label for="nome-mec">Nome</label>
+    <input type="text" class="form-control" id="nome-mec" name="nome-mec" placeholder="Nome">
+                  </div>
+                    </div>
+<!-- iiiiiiiiiiiiiiiiiiii -->
+                    
+
+                   <div class="form-group">
+  <label>CPF</label>
+  <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF" onblur="validarCPF(this.value)">
+  <small id="cpf-error" class="form-text text-danger"></small>
+</div>
+
+<script>
+  function validarCPF(cpf) {
+    cpf = cpf.replace(/[^\d]+/g,'');
+    cpf = cpf.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4');
+    if(cpf == '') {
+      document.getElementById("cpf-error").textContent = 'CPF inválido';
+      return false;
+    }
+    // Elimina CPFs invalidos conhecidos
+    if (cpf.length != 14 || 
+        cpf == "000.000.000-00" || 
+        cpf == "111.111.111-11" || 
+        cpf == "222.222.222-22" || 
+        cpf == "333.333.333-33" || 
+        cpf == "444.444.444-44" || 
+        cpf == "555.555.555-55" || 
+        cpf == "666.666.666-66" || 
+        cpf == "777.777.777-77" || 
+        cpf == "888.888.888-88" || 
+        cpf == "999.999.999-99")
+    {
+      document.getElementById("cpf-error").textContent = 'CPF inválido';
+      return false;
+    }
+    // Valida 1o digito    
+    add = 0;
+    for (i=0; i < 9; i ++) {
+      add += parseInt(cpf.charAt(i)) * (10 - i);
+    }
+    rev = 11 - (add % 11);
+    if (rev == 10 || rev == 11) {
+      rev = 0;
+    }
+    if (rev != parseInt(cpf.charAt(9))) {
+      document.getElementById("cpf-error").textContent = 'CPF inválido';
+      return false;
+    }
+    // Valida 2o digito    
+    add = 0;
+    for (i = 0; i < 10; i ++) {
+      add += parseInt(cpf.charAt(i)) * (11 - i);
+    }
+    rev = 11 - (add % 11);
+    if (rev == 10 || rev == 11) {
+      rev = 0;
+    }
+    if (rev != parseInt(cpf.charAt(10))) {
+      document.getElementById("cpf-error").textContent = 'CPF inválido';
+      return false;
+    }
+    document.getElementById("cpf-error").textContent = '';
+    return true;   
+  }  
+</script>
+                    </div>
+
+                
+
+                  <div class="form-group">
+                      <label >Marca</label>
+                      <input type="text" class="form-control" id="nome-mec" name="nome-mec" placeholder="Nome">
+                  </div>
+
+
+
+                  <div class="form-group">
+                      <label >modelo</label>
+                      <input type="text" class="form-control" id="email" name="email-mec" placeholder="Categoria">
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Ano</label>
+                      <select class="form-control" id="ano" name="ano"></select>
+                    </div>
+                  </div>
+
+
+                  <script>
+                    var selectAno = document.getElementById("ano");
+                    var anoAtual = new Date().getFullYear();
+                    var anoMin = 1989;
+                    var anoMax = 2023;
+                  
+                    for (var i = anoMax; i >= anoMin; i--) {
+                      var option = document.createElement("option");
+                      option.text = i;
+                      option.value = i;
+                      selectAno.appendChild(option);
+                    }
+                  
+                    selectAno.value = anoAtual;
+                  </script>
+
+
+                  <div class="row">
+                      
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Data</label>
+                        <input type="date" class="form-control" id="data" name="data" placeholder="Data" required>
+                        <small id="data-error" class="form-text text-danger"></small>
+                      </div>
+                    </div>
+<script>// obtém a data atual
+  const hoje = new Date();
+  
+  // obtém a próxima semana adicionando 7 dias à data atual
+  const proximaSemana = new Date(hoje.getTime() + 7 * 24 * 60 * 60 * 1000);
+  
+  // obtém a data no formato "aaaa-mm-dd" para atribuir ao atributo "min" do campo "input"
+  const dataProximaSemana = proximaSemana.toISOString().split('T')[0];
+  
+  // atribui a data da próxima semana ao atributo "min" do campo "input"
+  document.getElementById('data').setAttribute('min', dataProximaSemana);
+  
+  // obtém os dias da semana que devem ser restritos
+  const diasRestritos = [2, 4, 5];
+  
+  // adiciona um listener para o evento "change" do campo "input"
+  document.getElementById('data').addEventListener('change', function() {
+    const dataSelecionada = new Date(this.value);
+    const diaDaSemana = dataSelecionada.getDay();
+    if (diasRestritos.includes(diaDaSemana)) {
+      document.getElementById('data-error').textContent = 'Selecione outra data';
+      this.value = '';
+    } else {
+      document.getElementById('data-error').textContent = '';
+    }
+  });</script>
+                    
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Horário, das 6 as 22 horas</label>
+                        <input type="time" class="form-control" id="horario" name="horario" placeholder="Horário">
+                      </div>
+                    </div>
+
+                  <script>
+                    var horario = document.getElementById("horario");
+                  
+                    horario.addEventListener("blur", function() {
+                      var hora = horario.value.split(":")[0];
+                      
+                      if (hora < 6 || hora >= 22) {
+                        alert("Horário não permitido. Selecione um horário entre 6h e 22h.");
+                        horario.value = "";
+                      }
+                    });
+                  </script>
+
+
+                  <div class="form-group">
+                      <label >Descrição</label>
+                      <input type="text" class="form-control" id="endereco" name="endereco-mec" placeholder="Estoque">
+                  </div>
+                  
+                  <small>
+                      <div id="mensagem">
+
+                      </div>
+                  </small> 
+
+              </div>
+
+
+
+              <div class="modal-footer">
+
+
+
+              <input type="hidden" name="txtid2" id="txtid2">
+              <input type="hidden" name="antigo" id="antigo">
+              
+              <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary" onclick="retornar2(); return false" >
+                <a onclick="editar2(); return false"title='Comprar'>Cadastar</a></button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="../plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="../plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<!-- <script src="../dist/js/demo.js"></script> -->
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<!-- <script src="../dist/js/pages/dashboard.js"></script> -->
+</body>
+</html>
