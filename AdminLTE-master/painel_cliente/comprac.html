@@ -42,7 +42,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="##" class="nav-link">Home</a>
+        <a href="../cliente.html" class="nav-link">Home</a>
       </li>
       
     </ul>
@@ -148,53 +148,13 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <br>
-          <li class="nav-header">Contatos</li>
-          
-  
-  
-          <!-- produtos -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-users fas fa-chart-pie"></i>
-              <p>
-                Equipe
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <!-- href="painel_adm/mecanicos.html" -->
-                
-                <a href="mec.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mecânicos</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="rec.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Recepicionistas</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-    
+       
           
   
           <br>
-          <li class="nav-header">CONSULTAS</li>
+          <li class="nav-header">Serviços</li>
   
-          <li class="nav-item">
-            <a href="#secao2" class="nav-link">
-              <i class="fas fa-check"></i>
-              <p>
-                serviços concluídos
-                <span class="right badge badge-danger">2</span>
-              </p>
-            </a>
-          </li>
-  
+         
           <li class="nav-item">
             <a href="comprac.html#secao0" class="nav-link">
               <i class="far fa-calendar-alt"></i>
@@ -217,7 +177,16 @@
               </p>
             </a>
           </li>
-          
+           <li class="nav-item">
+            <a href="#secao2" class="nav-link">
+              <i class="fas fa-check"></i>
+              <p>
+                serviços concluídos
+                <span class="right badge badge-danger">2</span>
+              </p>
+            </a>
+          </li>
+  
   
       
   
@@ -236,7 +205,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="####">Home</a></li>
+              <li class="breadcrumb-item"><a href="../cliente.html">Home</a></li>
               <li class="breadcrumb-item active">Produtos Comprados e agendados</li>
             </ol>
           </div><!-- /.col -->
@@ -275,7 +244,7 @@
                   
                   <tr>
                       <th>Nome</th>
-                      <th>Valor</th>
+                      
                       <th>Data</th>
                       
                       <th>Ações</th>
@@ -292,12 +261,12 @@
                           <div class="row">
                             <div class="col-12 col-sm-6 col-md-3">
                               <div class="info-box">
-                                <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"> <img src="../img/rev.jpeg">
+                                <span class="info-box-icon bg-warning elevation-1"><a onclick="editar3(); return false"title='Serviços'> <i class="far fa-calendar-alt"></i>
                                   
-                                   </span></a>
+                                 </a>  </span>
                     
                                 <div class="info-box-content" style="font-size: 16px">
-                                  <span class="info-box-text"><a onclick="editar(); return false"title='Comprar'> </a> <br></span>
+                                  <span class="info-box-text"><a onclick="editar(); return false"title='Serviços'> </a> <br></span>
                                   <span class="info-box-number">
                                       
                                     <!-- <small>%</small> -->
@@ -308,14 +277,15 @@
                               <!-- /.info-box -->
                             </div> <center>Revisão de carro</center></td>
 
-                      <td>R$ 250,00</td>
+                      
                       <td>15/03/2023</td>
                       
                      
 
                       <td>
                            <!-- <a onclick="editar(); return false" class='text-primary mr-1' title='Editar Dados'><i class='far fa-edit'></i></a> -->
-                          <a onclick="excluir(); return false" class='text-danger mr-1' title='Excluir Registro'>Cancelar</a>
+                         <a onclick="excluir(); return false" class='text-danger mr-1' title='Cancelar agendamento'>
+                        <button type="button" id="btn-deletar" class="btn btn-danger">cancelar</button></a>
                       </td>
                   </tr>
 
@@ -329,12 +299,12 @@
                           <div class="row">
                             <div class="col-12 col-sm-6 col-md-3">
                               <div class="info-box">
-                                <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"> <img src="../img/alinhamento.jpg"">
+                                <span class="info-box-icon bg-warning elevation-1"><a onclick="editar3(); return false"title='Serviços'> <i class="far fa-calendar-alt"></i></a>
                                   
-                                   </span></a>
+                                   </span>
                     
                                 <div class="info-box-content" style="font-size: 16px">
-                                  <span class="info-box-text"><a onclick="editar(); return false"title='Comprar'> </a> <br></span>
+                                  <span class="info-box-text"><a onclick="editar(); return false"title='Serviços'> </a> <br></span>
                                   <span class="info-box-number">
                                       
                                     <!-- <small>%</small> -->
@@ -346,7 +316,7 @@
                             </div> <center>Alinhamento e balanceamento</center>
                      </td>
                     
-                    <td>A partir de R$100,00</td>
+                    
                     <td>04/02/2023</td>
                     
                      
@@ -360,7 +330,8 @@
 
                             </i>
                           </a> -->
-                          <a onclick="excluir(); return false" class='text-danger mr-1' title='Excluir Registro'>Cancelar</a>
+                          <a onclick="excluir(); return false" class='text-danger mr-1' title='Cancelar agendamento'>
+                        <button type="button" id="btn-deletar" class="btn btn-danger">cancelar</button></a>
                       </td>
                   </tr>
 
@@ -408,7 +379,7 @@
                 
                 <tr>
                     <th>Nome</th>
-                    <th>Valor</th>
+                   
                     <th>Data de recebimento</th>
                     
                     <th>possivel data de entrega</th>
@@ -425,12 +396,13 @@
                         <div class="row">
                           <div class="col-12 col-sm-6 col-md-3">
                             <div class="info-box">
-                              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"> <img src="../img/Corrente-de-moto-5.jpg">
-                                
-                                 </span></a>
+                              <span class="info-box-icon bg-danger elevation-1">
+                                <a onclick="editar2(); return false"title='Serviços'><i class="fas fa-spinner fa-pulse"></i>
+                                </a>
+                                 </span>
                   
                               <div class="info-box-content" style="font-size: 16px">
-                                <span class="info-box-text"><a onclick="editar(); return false"title='Comprar'> </a> <br></span>
+                                <span class="info-box-text"><a onclick="editar(); return false"title='Serviços'> </a> <br></span>
                                 <span class="info-box-number">
                                     
                                   <!-- <small>%</small> -->
@@ -439,9 +411,9 @@
                               <!-- /.info-box-content -->
                             </div>
                             <!-- /.info-box -->
-                          </div> <center>Troca de kit relação</center></td>
+                          </div> <center>Manutenção completa</center></td>
 
-                    <td>R$ 250,00</td>
+                    
                     <td>04/02/2023</td>
                     <td>04/02/2023</td>
                     
@@ -460,12 +432,13 @@
                         <div class="row">
                           <div class="col-12 col-sm-6 col-md-3">
                             <div class="info-box">
-                              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"> <img src="../img/c17.jpg">
+                              <span class="info-box-icon bg-danger elevation-1">
+                                <a onclick="editar2(); return false"title='Serviços'> <i class="fas fa-spinner fa-pulse"></i></span>
                                 
-                                 </span></a>
+                                 </a>
                   
                               <div class="info-box-content" style="font-size: 16px">
-                                <span class="info-box-text"><a onclick="editar(); return false"title='Comprar'> </a> <br></span>
+                                <span class="info-box-text"><a onclick="editar(); return false"title='Serviços'> </a> <br></span>
                                 <span class="info-box-number">
                                     
                                   <!-- <small>%</small> -->
@@ -477,7 +450,7 @@
                           </div> <center>Diagnóstico eletrônico</center>
                    </td>
                   
-                  <td>R$100,00</td>
+              
                   <td>04/02/2023</td>
                   <td>04/02/2023</td>
                   
@@ -523,7 +496,7 @@
             <thead>
               
               <tr>
-                  <th>Nome</th>
+                  <th>Descrição do serviços</th>
                   <th>Valor</th>
                   <th>Data de recebimento</th>
                   
@@ -541,12 +514,12 @@
                       <div class="row">
                         <div class="col-12 col-sm-6 col-md-3">
                           <div class="info-box">
-                            <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"> <img src="../img/rev.jpeg">
+                            <span class="info-box-icon bg-purple elevation-1"> <a onclick="editar(); return false"title='Serviços'><i class="fas fa-check-circle text-success"></i></a>
                               
-                               </span></a>
+                               </span>
                 
                             <div class="info-box-content" style="font-size: 16px">
-                              <span class="info-box-text"><a onclick="editar(); return false"title='Comprar'> </a> <br></span>
+                              <span class="info-box-text"><a onclick="editar(); return false"title='Serviços'> </a> <br></span>
                               <span class="info-box-number">
                                   
                                 <!-- <small>%</small> -->
@@ -557,7 +530,7 @@
                           <!-- /.info-box -->
                         </div> <center>Revisão de carro</center></td>
 
-                  <td>R$ 250,00</td>
+                  <td>R$ 774,92</td>
                   <td>15/03/2023</td>
                   <td>16/03/2023</td>
                   
@@ -582,12 +555,12 @@
                     <div class="row">
                       <div class="col-12 col-sm-6 col-md-3">
                         <div class="info-box">
-                          <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"> <img src="../img/c17.jpg">
+                          <span class="info-box-icon bg-purple elevation-1"><a onclick="editar(); return false"title='Serviços'> <i class="fas fa-check-circle text-success"></i>
                             
-                             </span></a>
+                            </a> </span>
               
                           <div class="info-box-content" style="font-size: 16px">
-                            <span class="info-box-text"><a onclick="editar(); return false"title='Comprar'> </a> <br></span>
+                            <span class="info-box-text"><a onclick="editar(); return false"title='Serviços'> </a> <br></span>
                             <span class="info-box-number">
                                 
                               <!-- <small>%</small> -->
@@ -622,22 +595,6 @@
   </div>
 </div>
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="modalDados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -653,50 +610,39 @@
                 <div class="modal-body">
 
                     <div class="form-group">
-                        <label >Nome</label>
-                        <input type="text" class="form-control" id="nome-mec" name="nome-mec" placeholder="Nome">
-                    </div>
+                        <label >Descrição do Serviço: </label><p>Realizamos uma revisão completa no veículo, incluindo a troca de óleo e filtro, verificação do sistema de freios, suspensão e ar condicionado. Durante a inspeção, identificamos as seguintes necessidades de reparo:</p>
 
-
-
-                    <div class="form-group">
-                        <label >Categoria</label>
-                        <input type="text" class="form-control" id="email" name="email-mec" placeholder="Categoria">
-                    </div>
-
-
-                    <div class="form-group">
-                        <label >Fornecedor</label>
-                        <input type="text" class="form-control" id="email" name="email-mec" placeholder="Fornecedor">
-                    </div>
-
-
-                    <div class="row">
+<p>Substituição da bomba d'água devido a vazamento - R$ 450,46</p>
+<p>Substituição do filtro de ar devido ao excesso de sujeira - R$ 45,99</p>
+<p>Verificação e correção do alinhamento e balanceamento dos pneus - R$ 123,69</p>
+<p>Troca das pastilhas de freio dianteiras - R$ 154,78</p>
+<p>Preço Total: R$ 774,92</p>
                         
+                    </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label >Valor Compra</label>
-                                <input type="text" class="form-control" id="telefone" name="telefone-mec" placeholder="Valor Compra">
-                            </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label >Valor Venda</label>
-                                <input type="text" class="form-control" id="cpf" name="cpf-mec" placeholder="Valor Venda">
-                            </div>
-                        </div>
 
+                    <div class="form-group">
+                        <label >Termos e Condições:</label>
+                        <p>Os serviços prestados pela nossa mecânica possuem garantia de 3 meses para as peças substituídas e mão de obra. Em caso de problemas, o cliente deve entrar em contato conosco para avaliação e reparo, se necessário.</p>
                     </div>
 
 
                     <div class="form-group">
-                        <label >Estoque</label>
-                        <input type="text" class="form-control" id="endereco" name="endereco-mec" placeholder="Estoque">
+                        <label >Observações:</label>
+                        <p>O veículo apresentava um nível baixo de óleo, recomendamos que o cliente verifique o nível regularmente e faça as trocas de óleo conforme recomendado no manual do veículo.</p>
+                      <p>As pastilhas de freio traseiras ainda possuem uma espessura aceitável, mas recomendamos que sejam trocadas na próxima revisão.</p>
                     </div>
-                    
-                    <small>
+
+
+
+                    <div class="form-group">
+                        <label >Deixe aqui sua sugestão</label>
+                        <input type="text" class="form-control" id="email" name="email-mec" placeholder="Sugestões">
+                    </div>
+
+
+                  
                         <div id="mensagem">
 
                         </div>
@@ -713,8 +659,9 @@
                 <input type="hidden" name="txtid2" id="txtid2">
                 <input type="hidden" name="antigo" id="antigo">
                 
-                <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary" onclick="retornar(); return false" >Salvar</button>
+                
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-cancelar-excluir">voltar</button>
+                <form method="post">
                 </div>
             </form>
         </div>
@@ -722,6 +669,150 @@
 </div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="modalDados2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+  
+                <h5 class="modal-title" id="title" > . </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="form" method="POST">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label >Descrição do Serviço: </label><p>O veículo foi recebido para a realização de serviços de manutenção solicitados pelo cliente. Até o momento, foram realizados os seguintes serviços:</p>
+
+<p>Verificação do sistema de freios - Constatado desgaste excessivo nas pastilhas dianteiras. O cliente foi informado e autorizou a troca das pastilhas. As pastilhas traseiras apresentam um desgaste dentro do aceitável e serão mantidas. As peças foram encomendadas e serão trocadas assim que chegarem. Previsão de conclusão: 2 dias úteis.</p>
+<p>Troca de Óleo e Filtro - O óleo e o filtro foram trocados de acordo com as especificações do fabricante. Foi verificado que o nível de óleo estava abaixo do recomendado, o que pode ter causado desgaste excessivo no motor. Recomendamos que o cliente verifique o nível regularmente e faça as trocas de óleo conforme recomendado no manual do veículo.</p>
+<p>Alinhamento e Balanceamento - Foi verificado que o veículo apresentava desalinhamento e falta de balanceamento, o que pode ter contribuído para o desgaste irregular dos pneus. O alinhamento e balanceamento foram corrigidos, garantindo maior estabilidade e segurança ao dirigir.</p>
+
+                        
+                    </div>
+
+<div class="form-group">
+                        <label >Previsão de Conclusão dos Serviços: </label>
+                        <p>em ate 4 dias</p>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label >Termos e Condições:</label>
+                        <p>Os serviços prestados pela nossa mecânica possuem garantia de 3 meses para as peças substituídas e mão de obra. Em caso de problemas, o cliente deve entrar em contato conosco para avaliação e reparo, se necessário.</p>
+                    </div>
+
+
+                    
+
+
+                    <div class="form-group">
+                        <label >Deixe aqui sua sugestão</label>
+                        <input type="text" class="form-control" id="email" name="email-mec" placeholder="Sugestões">
+                    </div>
+
+
+                  
+                        <div id="mensagem">
+
+                        </div>
+                    </small> 
+
+                </div>
+
+
+
+                <div class="modal-footer">
+
+
+
+                <input type="hidden" name="txtid2" id="txtid2">
+                <input type="hidden" name="antigo" id="antigo">
+                
+                
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-cancelar-excluir">voltar</button>
+                <form method="post">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+                    
+<!-- Modal -->
+<div class="modal fade" id="modalDados3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+  
+                <h5 class="modal-title" id="title" > . </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="form" method="POST">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                      <p>Olá, gostaria de agendar uma revisão para meu carro</p>
+                        <label > Claro, podemos ajudá-lo com isso. Qual é o modelo do seu carro e qual tipo de revisão você precisa?</label>
+<p>É um Toyota Corolla e eu preciso de uma revisão completa, com troca de óleo, inspeção de freios e verificação geral do veículo.</p>
+                      
+
+
+
+                        
+                    </div>
+
+<div class="form-group">
+                        <label > Agendamento</label>
+                        <p>seu horário é no sábado, pelo período da manhã, por volta das 9h</p>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label >Termos e Condições:</label>
+                        <p>Os serviços prestados pela nossa mecânica possuem garantia de 3 meses para as peças substituídas e mão de obra. Em caso de problemas, o cliente deve entrar em contato conosco para avaliação e reparo, se necessário.</p>
+                    </div>
+
+
+                    
+
+
+                    <div class="form-group">
+                        <label >Deixe aqui sua sugestão</label>
+                        <input type="text" class="form-control" id="email" name="email-mec" placeholder="Sugestões">
+                    </div>
+
+
+                  
+                        <div id="mensagem">
+
+                        </div>
+                    </small> 
+
+                </div>
+
+
+
+                <div class="modal-footer">
+
+
+
+                <input type="hidden" name="txtid2" id="txtid2">
+                <input type="hidden" name="antigo" id="antigo">
+                
+                
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-cancelar-excluir">voltar</button>
+                <form method="post">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 
@@ -773,7 +864,18 @@
   function editar(){
     $('#modalDados').modal('show');
     // mudar titulo para editar
-    title.innerHTML = "Comprar";
+    title.innerHTML = "Descrição dos servisos comcluídos";
+  }
+  function editar2(){
+    $('#modalDados2').modal('show');
+    // mudar titulo para editar
+    title.innerHTML = "Descrição dos servisos em andamento";
+  }
+
+  function editar3(){
+    $('#modalDados3').modal('show');
+    // mudar titulo para editar
+    title.innerHTML = "Descrição do serviço";
   }
 
   
@@ -784,10 +886,11 @@
 
 
   function retornar(){
-    location.href = "compras.html";
+    location.href = "comprac.html#secao2";
   }
 
 </script>
+
 
 
 
