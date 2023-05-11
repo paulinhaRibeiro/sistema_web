@@ -161,11 +161,14 @@
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
+      
       <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
+           
+          <a class="nav-link" href="../index.html">
+            Sair
+          </a>
       </li>
+
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -209,53 +212,12 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <br>
-          <li class="nav-header">Contatos</li>
-          
-  
-  
-          <!-- produtos -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-users fas fa-chart-pie"></i>
-              <p>
-                Equipe
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <!-- href="painel_adm/mecanicos.html" -->
-                
-                <a href="painel_cliente/mec.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mecânicos</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="painel_cliente/recepcionistas.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Recepicionistas</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
+         
     
           
   
           <br>
-          <li class="nav-header">CONSULTAS</li>
-  
-          <li class="nav-item">
-            <a href="painel_cliente/comprac.html#secao2" class="nav-link">
-              <i class="fas fa-check"></i>
-              <p>
-                serviços concluídos
-                <span class="right badge badge-danger">2</span>
-              </p>
-            </a>
-          </li>
-  
+         <li class="nav-header">Serviços</li>
           <li class="nav-item">
             <a href="painel_cliente/comprac.html" class="nav-link">
               <i class="far fa-calendar-alt"></i>
@@ -281,6 +243,18 @@
               </p>
             </a>
           </li>
+           
+  
+          <li class="nav-item">
+            <a href="painel_cliente/comprac.html#secao2" class="nav-link">
+              <i class="fas fa-check"></i>
+              <p>
+                serviços concluídos
+                <span class="right badge badge-danger">2</span>
+              </p>
+            </a>
+          </li>
+  
           
   
       
@@ -300,7 +274,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="cliente.html">Home</a></li>
               <!-- <li class="breadcrumb-item active">Início</li> -->
             </ol>
           </div><!-- /.col -->
@@ -314,888 +288,14 @@
     <section class="content">
       <div class="container-fluid">
         <br>
-        <h4 class="m-0">Revisões</h4>
-  
-        <!-- Info boxes -->
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"> <img src="img/rev.jpeg">
-                
-                 </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text"><a onclick="editar(); return false"title='Comprar'>Revisão de carro</a> <br>Valor</span>
-                <span class="info-box-number">
-                    indeterminado
-                  <!-- <small>%</small> -->
-                </span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-danger elevation-1">
-                <img src="img/revm.jpg"> </span></a>
-  
-                <div class="info-box-content" style="font-size: 16px">
-                    <span class="info-box-text">Revisão de moto <br>Valor</span>
-                    <span class="info-box-number">
-                        indeterminado
-                      <!-- <small>%</small> -->
-                    </span>
-                  </div>
-                  <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-              </div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-danger elevation-1">
-                <img src="img/reb.jpeg"> </span> </a>
-  
-                <div class="info-box-content" style="font-size: 16px">
-                    <span class="info-box-text">Revisão de bicicleta <br>Valor</span>
-                    <span class="info-box-number">
-                        indeterminado
-                      <!-- <small>%</small> -->
-                    </span>
-                  </div>
-                  <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-              </div>
-
-              
-
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3"> 
-              <!-- fas fa-users -->
-              <span class="info-box-icon bg-warning elevation-1">
-                <i class="far fa-calendar-alt"></i></span>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Serviços Pendentes</span>
-                <span class="info-box-number">2</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-        <br>
-        <h4 class="m-0">Serviços para carro</h4>
-        <!-- Info boxes -->
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box">
-              <!-- Troca de amortecedores: a partir de R$500,00 (por unidade)-->
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"><img src="img/amortecedor.jpeg"></span>
-  </a>
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. amortecedores</span>
-                <span class="info-box-number">
-                  A partir de R$500,00
-                  <!-- <small>%</small> -->
-                </span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          <!-- Alinhamento e balanceamento: a partir de R$100,00 -->
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-danger elevation-1">
-                <img src="img/alinhamento.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Alinhamento e balanceamento</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-  
-          <!-- fix for small devices only -->
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-success elevation-1">
-                <img src="img/c2.png"> </span></a>
-  
-                <div class="info-box-content" style="font-size: 16px">
-                  <span class="info-box-text">T. óleo e filtro</span>
-                  <span class="info-box-number">A parte de R$ 100,00</span>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
-              <!-- /.info-box -->
-            </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/s1.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. penel</span>
-                <span class="info-box-number">A parte de R$ 400,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c1.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. freios</span>
-                <span class="info-box-number">A parte de R$ 500,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/cdentaria.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. correia dentada</span>
-                <span class="info-box-number">A partir de R$400,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c7.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. bateria</span>
-                <span class="info-box-number">A partir de R$250,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c8.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. velas</span>
-                <span class="info-box-number">A partir de R$80,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c9.jpeg"> </span> </a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. filtro de ar</span>
-                <span class="info-box-number">partir de R$50,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c10.jpg"> </span> </a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. filtro de combustível</span>
-                <span class="info-box-number">A partir de R$80,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/eixo.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. eixo</span>
-                <span class="info-box-number">A partir de R$250,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!--  -->
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>   <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c12.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. de fluido de freio</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c13.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. fluido de arrefecimento</span>
-                <span class="info-box-number">A partir de R$150,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/14.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. escapamento</span>
-                <span class="info-box-number">A partir de R$500,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/fuxo.jpg"> </span> </a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. sensor de oxigênio</span>
-                <span class="info-box-number">partir de R$200,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c16.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. bomba de água</span>
-                <span class="info-box-number">A partir de R$400,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c17.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Diagnóstico eletrônico</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c19.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. termostato</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>   <span class="info-box-icon bg-success elevation-1">
-                <img src="img/cabecote-dano2.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. junta do cabeçote</span>
-                <span class="info-box-number">A partir de R$800,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>   <span class="info-box-icon bg-success elevation-1">
-                <img src="img/troca-de-embreagem-de-cambio-automatizado.jpg"> </span> </a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. embreagem</span>
-                <span class="info-box-number">A partir R$1.500,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-success elevation-1">
-                <img src="img/lppp.jpeg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Limpesa</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-
-          <!-- /.col -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-warning elevation-1">
-                <img src="img/limpeza-de-bico.jpg"></i></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Limpeza de bicos injetores</span>
-                <span class="info-box-number">A partir de R$150,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-
-<br>
-<br>
-        <h4 class="m-0">Concertos de motos e troca de peças</h4>
-        <!-- Info boxes -->
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box">
-              <!-- Troca de amortecedores: a partir de R$500,00 (por unidade)-->
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-info elevation-1"><img src="img/VOCE-SABE-IDENTIFICAR-O-MOMENTO-DE-TROCAR-O-AMORTECEDOR-DA-MOTO_-CONFIRA-NOSSAS-DICAS.jpg"></span>
-  </a>
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. amortecedores</span>
-                <span class="info-box-number">
-                  A partir de R$100,00
-                  <!-- <small>%</small> -->
-                </span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          <!-- Alinhamento e balanceamento: a partir de R$100,00 -->
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-danger elevation-1">
-                <img src="img/troca-oleo-moto-1024x575.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. de óleo</span>
-                <span class="info-box-number">A partir de R$40,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-  
-          <!-- fix for small devices only -->
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-success elevation-1">
-                <img src="img/transferir (1).jpg"> </span></a>
-  
-                <div class="info-box-content" style="font-size: 16px">
-                  <span class="info-box-text">T. filtro de ar</span>
-                  <span class="info-box-number">A parte de R$ 100,00</span>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
-              <!-- /.info-box -->
-            </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/images.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. filtro de óleo</span>
-                <span class="info-box-number">A parte de R$ 100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/70.JPG"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Limpeza de carburador</span>
-                <span class="info-box-number">A parte de R$ 80,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/c8.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. vela</span>
-                <span class="info-box-number">A partir de R$40,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/s2.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. pneus</span>
-                <span class="info-box-number">A partir de R$120,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/transferir (1).jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Balanceamento de rodas</span>
-                <span class="info-box-number">A partir de R$80,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/alinhamento-roda-moto.jpg"> </span> </a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Alinhamento de rodas</span>
-                <span class="info-box-number">partir de R$50,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/corrente-vs-carda-01.jpg"> </span> </a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. corrente de transmissão</span>
-                <span class="info-box-number">A partir de R$80,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/Corrente-de-moto-5.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. kit relação</span>
-                <span class="info-box-number">A partir de R$150,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!--  -->
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>   <span class="info-box-icon bg-success elevation-1">
-                <img src="img/po.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. pastilhas de freio</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>   <span class="info-box-icon bg-success elevation-1">
-                <img src="img/m11transferir.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Limpesa</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-        
-          <!-- /.col -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-warning elevation-1">
-                <img src="img/maxresdefault.jpg"></i></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Limpeza de bicos injetores</span>
-                <span class="info-box-number">A partir de R$150,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-  
-        <br>
-        <br>
-        <h4 class="m-0">Consertos de bicicleta e troca de peças</h4>
-        <!-- Info boxes -->
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box">
-              <!-- Troca de amortecedores: a partir de R$500,00 (por unidade)-->
-              <a onclick="editar(); return false"title='Comprar'>
-                <span class="info-box-icon bg-info elevation-1"><img src="img/b1transferir.jpg"></span>
-  </a>
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. pneus</span>
-                <span class="info-box-number">
-                  A partir de R$100,00
-                  <!-- <small>%</small> -->
-                </span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          <!-- Alinhamento e balanceamento: a partir de R$100,00 -->
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-danger elevation-1">
-                <img src="img/b2Camara_capa.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. câmara de ar</span>
-                <span class="info-box-number">A partir de R$40,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-  
-          <!-- fix for small devices only -->
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-success elevation-1">
-                <img src="img/b3cambio-traseiro.jpg"> </span></a>
-  
-                <div class="info-box-content" style="font-size: 16px">
-                  <span class="info-box-text">Regulagem de câmbio</span>
-                  <span class="info-box-number">A parte de R$ 30,00</span>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
-              <!-- /.info-box -->
-            </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/b4transferir.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Regulagem de freios</span>
-                <span class="info-box-number">A parte de R$ 30,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/b5lubrificar-correntes-bicicleta.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Lubrificação de corrente</span>
-                <span class="info-box-number">A parte de R$ 20,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/b6images.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Ajuste de altura do selim</span>
-                <span class="info-box-number">A partir de R$20,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/b7DSCN2483.jpg"></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. cabos de freio e/ou câmbio</span>
-                <span class="info-box-number">A partir de R$40,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'> <span class="info-box-icon bg-success elevation-1">
-                <img src="img/b8WMB106.pad-tech1.jpg"> </span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">pastilhas de freio</span>
-                <span class="info-box-number">A partir de R$40,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>  <span class="info-box-icon bg-success elevation-1">
-                <img src="img/b10WhatsApp-Image-2018-04-26-at-9.29.51-AM.jpeg"> </span> </a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Montagem de bicicletas</span>
-                <span class="info-box-number">partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-        
-
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'>   <span class="info-box-icon bg-success elevation-1">
-                <img src="img/bbtransferir.jpg"> </span></a>
-  <!-- Troca de correia dentada: a partir de R$400,00 -->
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">T. pastilhas de yu....</span>
-                <span class="info-box-number">A partir de R$100,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-
-         
-        
-          <!-- /.col -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <a onclick="editar(); return false"title='Comprar'><span class="info-box-icon bg-warning elevation-1">
-                <img src="img/b11dicas-para-lavar-bike-casa.jpg"></i></span></a>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Limpeza</span>
-                <span class="info-box-number">A partir de R$150,00</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-
-
- 
-
-  
-  
-        <br>
-  
-        <br>
         <h4 class="m-0">Suporte</h4>
   
         <!-- Info boxes -->
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
-              <span class="info-box-icon bg-info elevation-1">
-                <i class="fas fa-check"></i></span>
+              <span class="info-box-icon bg-success elevation-1">
+               <a href="painel_cliente/comprac.html#secao2" class="nav-link"> <i class="fas fa-check"></i></a></span>
   
               <div class="info-box-content" style="font-size: 16px">
                 <span class="info-box-text">Serviços <br>Concluídos</span>
@@ -1212,8 +312,8 @@
   
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1">
-                <i class="far fa-calendar-alt"></i></span>
+              <span class="info-box-icon bg-warning elevation-1">
+                <a href="painel_cliente/comprac.html" class="nav-link"><i class="far fa-calendar-alt"></i></a></span>
   
               <div class="info-box-content" style="font-size: 16px">
                 <span class="info-box-text">Serviços <br>agendados</span>
@@ -1225,14 +325,17 @@
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
+
+          
   
           <!-- fix for small devices only -->
           <div class="clearfix hidden-md-up"></div>
   
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-success elevation-1">
-                <i class="fas fa-spinner fa-spin"></i></span>
+              <span class="info-box-icon bg-danger elevation-1">
+
+                <a href="painel_cliente/comprac.html#secao1" class="nav-link"><i class="fas fa-spinner fa-spin"></i> </a></span>
   
               <div class="info-box-content" style="font-size: 16px">
                 <span class="info-box-text">Serviços <br>em andamento</span>
@@ -1247,11 +350,95 @@
             <div class="info-box mb-3"> 
               <!-- fas fa-users -->
               <span class="info-box-icon bg-warning elevation-1">
-                <i class="fa fa-dollar-sign"></i></span>
+                <a onclick="editar(); return false"title='Comprar'>
+                <i class="far fa-calendar-alt"></i>
+              </a></span> 
   
               <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Total <br>de gaseos</span>
-                <span class="info-box-number">R$ 1.500</span>
+                <span class="info-box-text">Agendar visita</span>
+                <span class="info-box-number">2</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          
+        </div>
+        <!-- /.row -->
+  
+      </div>
+  
+        <br>
+        <h4 class="m-0">Suporte</h4>
+  
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box">
+              <span class="info-box-icon bg-success elevation-1">
+               <a href="painel_cliente/comprac.html#secao2" class="nav-link"> <i class="fas fa-check"></i></a></span>
+  
+              <div class="info-box-content" style="font-size: 16px">
+                <span class="info-box-text">Serviços <br>Concluídos</span>
+                <span class="info-box-number">
+                  2
+                  <!-- <small>%</small> -->
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+  
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-warning elevation-1">
+                <a href="painel_cliente/comprac.html" class="nav-link"><i class="far fa-calendar-alt"></i></a></span>
+  
+              <div class="info-box-content" style="font-size: 16px">
+                <span class="info-box-text">Serviços <br>agendados</span>
+                
+                <span class="info-box-number">3</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          
+  
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+  
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-danger elevation-1">
+
+                <a href="painel_cliente/comprac.html#secao1" class="nav-link"><i class="fas fa-spinner fa-spin"></i> </a></span>
+  
+              <div class="info-box-content" style="font-size: 16px">
+                <span class="info-box-text">Serviços <br>em andamento</span>
+                <span class="info-box-number">2</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3"> 
+              <!-- fas fa-users -->
+              <span class="info-box-icon bg-warning elevation-1">
+                <a onclick="editar(); return false"title='Comprar'>
+                <i class="far fa-calendar-alt"></i>
+              </a></span> 
+  
+              <div class="info-box-content" style="font-size: 16px">
+                <span class="info-box-text">Agendar visita</span>
+                <span class="info-box-number">2</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -1445,7 +632,7 @@
               <input type="hidden" name="antigo" id="antigo">
               
               <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary" onclick="retornar(); return false" >Agendar</button>
+              <button type="submit" name="btn-salvar" id="btn-salvar" class="btn btn-primary" onclick="retornar(); return false" ><a onclick="editar(); return false"title='Comprar'>agendar</a></button>
               </div>
           </form>
       </div>
@@ -1453,7 +640,14 @@
 </div>
 
 
+      
 
+   
+<script> function editar2(){
+    $('#modalDados2').modal('show');
+    // mudar titulo para editar
+    title.innerHTML = "Comfirme";
+  } </script>
 
 
 
@@ -1504,7 +698,7 @@ function novo(){
 function editar(){
   $('#modalDados').modal('show');
   // mudar titulo para editar
-  title.innerHTML = "Editar Registro";
+  title.innerHTML = "Agende a sua visita";
 }
 
 
@@ -1515,7 +709,11 @@ function excluir(){
 
 
 function retornar(){
-  location.href = "cliente.html";
+  location.href = "painel_cliente/comprac.html#secao0####";
+}
+
+function retornar2(){
+  location.href = "cliente.html#ij";
 }
 
 </script>
