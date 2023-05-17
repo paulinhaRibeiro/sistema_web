@@ -557,6 +557,7 @@ ul.btn li:last-child {
 
 .three_box {
      padding: 0 40px;
+     background-color: beige;
 }
 
 .box_text {
@@ -804,7 +805,7 @@ ul.btn li:last-child {
 
 .footer {
      background: #141629;
-     padding-top: 85px;
+     padding-top: 35px;
      text-align: center;
 }
 
@@ -816,7 +817,7 @@ ul.btn li:last-child {
 .footer .titlepage h2 {
      color: #fff;
      margin: inherit;
-     border-bottom: #fff solid 1px;
+     border-bottom: #fff solid 5px;
 }
 
 ul.location_icon {
