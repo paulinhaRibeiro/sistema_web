@@ -270,7 +270,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Produtos e Servisos oferecidos</h1>
+            <h1 class="m-0">Painel do cliente </h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -285,90 +285,7 @@
   
     <!-- Main content -->
     
-    <section class="content">
-      <div class="container-fluid">
-        <br>
-        <h4 class="m-0">Suporte</h4>
-  
-        <!-- Info boxes -->
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box">
-              <span class="info-box-icon bg-success elevation-1">
-               <a href="painel_cliente/comprac.html#secao2" class="nav-link"> <i class="fas fa-check"></i></a></span>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Serviços <br>Concluídos</span>
-                <span class="info-box-number">
-                  2
-                  <!-- <small>%</small> -->
-                </span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <span class="info-box-icon bg-warning elevation-1">
-                <a href="painel_cliente/comprac.html" class="nav-link"><i class="far fa-calendar-alt"></i></a></span>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Serviços <br>agendados</span>
-                
-                <span class="info-box-number">3</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-
-          
-  
-          <!-- fix for small devices only -->
-          <div class="clearfix hidden-md-up"></div>
-  
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1">
-
-                <a href="painel_cliente/comprac.html#secao1" class="nav-link"><i class="fas fa-spinner fa-spin"></i> </a></span>
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Serviços <br>em andamento</span>
-                <span class="info-box-number">2</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3"> 
-              <!-- fas fa-users -->
-              <span class="info-box-icon bg-warning elevation-1">
-                <a onclick="editar(); return false"title='Comprar'>
-                <i class="far fa-calendar-alt"></i>
-              </a></span> 
-  
-              <div class="info-box-content" style="font-size: 16px">
-                <span class="info-box-text">Agendar visita</span>
-                <span class="info-box-number">2</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-          
-        </div>
-        <!-- /.row -->
-  
-      </div>
-  
+    
         <br>
         <h4 class="m-0">Suporte</h4>
   
@@ -525,12 +442,7 @@
                       <input type="text" class="form-control" id="email" name="email-mec" placeholder="Categoria">
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Ano</label>
-                      <select class="form-control" id="ano" name="ano"></select>
-                    </div>
-                  </div>
+                 
 
 
                   <script>
@@ -548,6 +460,62 @@
                   
                     selectAno.value = anoAtual;
                   </script>
+
+
+
+<script>
+  var selectAno = document.getElementById("ano");
+  var selectOpcoesServicos = document.getElementById("opcoesServicos");
+  var inputServicos = document.getElementById("servicos");
+  var anoAtual = new Date().getFullYear();
+  var anoMin = 1989;
+  var anoMax = 2023;
+
+  for (var i = anoMax; i >= anoMin; i--) {
+    var option = document.createElement("option");
+    option.text = i;
+    option.value = i;
+    selectAno.appendChild(option);
+  }
+
+  selectAno.value = anoAtual;
+
+  selectOpcoesServicos.addEventListener("change", function() {
+    if (selectOpcoesServicos.value === "") {
+      inputServicos.value = "";
+      inputServicos.disabled = false;
+    } else {
+      inputServicos.value = selectOpcoesServicos.value;
+      inputServicos.disabled = true;
+    }
+  });
+</script>
+
+<div class="row">
+                      
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <label>Ano</label>
+      <select class="form-control" id="ano" name="ano"></select>
+    </div>
+  </div>
+<script>// obtém a data atual
+</script>
+  
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <label>Serviços</label>
+      <select class="form-control" id="opcoesServicos" name="opcoesServicos">
+        <option value="">Selecione uma opção</option>
+        <option value="servico1">Alinhamento</option>
+        <option value="servico2">Revisão</option>
+        <option value="servico3">Troca de óleo</option>
+      </select>
+      <input type="text" class="form-control" id="servicos" name="servicos" placeholder="Digite outro serviço">
+    </div>
+  </div>
 
 
                   <div class="row">
@@ -609,10 +577,10 @@
                   </script>
 
 
-                  <div class="form-group">
-                      <label >Descrição</label>
-                      <input type="text" class="form-control" id="endereco" name="endereco-mec" placeholder="Estoque">
-                  </div>
+<div class="form-group">
+  <label>Descrição</label>
+  <textarea class="form-control" id="descricao" name="descricao" placeholder="Estoque" rows="4"></textarea>
+</div>
                   
                   <small>
                       <div id="mensagem">
